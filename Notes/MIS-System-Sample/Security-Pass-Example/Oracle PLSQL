@@ -1,0 +1,1 @@
+ALTER USER Andrew IDENTIFIED BY Sample;
