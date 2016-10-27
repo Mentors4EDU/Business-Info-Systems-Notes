@@ -1,0 +1,91 @@
+al@al-MacBook:~$ 
+al@al-MacBook:~$ sudo sh -c 'echo "deb http://packages.ros.org/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.1ist.d/ros-latest.list'
+[sudo] password for al: 
+sh: 1: cannot create /etc/apt/sources.1ist.d/ros-latest.list: Directory nonexistent
+al@al-MacBook:~$ PasswordAnon
+mypogo12: command not found
+al@al-MacBook:~$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.ZAbVEjgp7D --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+gpg: requesting key B01FA116 from hkp server ha.pool.sks-keyservers.net
+gpg: key B01FA116: public key "ROS Builder <rosbuild@ros.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+al@al-MacBook:~$ sudo apt-get update
+Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+Ign http://us.archive.ubuntu.com trusty InRelease                              
+Get:2 http://us.archive.ubuntu.com trusty-updates InRelease [65.9 kB]          
+Ign http://extras.ubuntu.com trusty InRelease                                  
+Get:3 http://security.ubuntu.com trusty-security/main Sources [120 kB]         
+Get:4 http://extras.ubuntu.com trusty Release.gpg [72 B]                       
+Get:5 http://us.archive.ubuntu.com trusty-backports InRelease [65.9 kB]       
+Hit http://extras.ubuntu.com trusty Release                                    
+Get:6 http://security.ubuntu.com trusty-security/restricted Sources [4,064 B]  
+Hit http://us.archive.ubuntu.com trusty Release.gpg                            
+Get:7 http://security.ubuntu.com trusty-security/universe Sources [44.7 kB]    
+Get:8 http://us.archive.ubuntu.com trusty-updates/main Sources [384 kB]       
+Hit http://extras.ubuntu.com trusty/main Sources                             
+Get:9 http://security.ubuntu.com trusty-security/multiverse Sources [3,202 B]
+Get:10 http://security.ubuntu.com trusty-security/main i386 Packages [503 kB]  
+Hit http://extras.ubuntu.com trusty/main i386 Packages                         
+Get:11 http://us.archive.ubuntu.com trusty-updates/restricted Sources [5,360 B]
+Get:12 http://us.archive.ubuntu.com trusty-updates/universe Sources [169 kB]   
+Get:13 http://security.ubuntu.com trusty-security/restricted i386 Packages [12.7 kB]
+Get:14 http://security.ubuntu.com trusty-security/universe i386 Packages [141 kB]
+Get:15 http://us.archive.ubuntu.com trusty-updates/multiverse Sources [7,531 B]
+Get:16 http://us.archive.ubuntu.com trusty-updates/main i386 Packages [870 kB] 
+Ign http://extras.ubuntu.com trusty/main Translation-en_US                     
+Get:17 http://security.ubuntu.com trusty-security/multiverse i386 Packages [5,360 B]
+Get:18 http://security.ubuntu.com trusty-security/main Translation-en [298 kB] 
+Ign http://extras.ubuntu.com trusty/main Translation-en                        
+Get:19 http://security.ubuntu.com trusty-security/multiverse Translation-en [2,848 B]
+Get:20 http://security.ubuntu.com trusty-security/restricted Translation-en [3,206 B]
+Get:21 http://security.ubuntu.com trusty-security/universe Translation-en [84.3 kB]
+Get:22 http://us.archive.ubuntu.com trusty-updates/restricted i386 Packages [15.6 kB]
+Get:23 http://us.archive.ubuntu.com trusty-updates/universe i386 Packages [389 kB]
+Get:24 http://us.archive.ubuntu.com trusty-updates/multiverse i386 Packages [15.5 kB]
+Get:25 http://us.archive.ubuntu.com trusty-updates/main Translation-en [443 kB]
+Get:26 http://us.archive.ubuntu.com trusty-updates/multiverse Translation-en [7,931 B]
+Get:27 http://us.archive.ubuntu.com trusty-updates/restricted Translation-en [3,699 B]
+Get:28 http://us.archive.ubuntu.com trusty-updates/universe Translation-en [205 kB]
+Get:29 http://us.archive.ubuntu.com trusty-backports/main Sources [9,646 B]    
+Get:30 http://us.archive.ubuntu.com trusty-backports/restricted Sources [28 B] 
+Get:31 http://us.archive.ubuntu.com trusty-backports/universe Sources [35.2 kB]
+Get:32 http://us.archive.ubuntu.com trusty-backports/multiverse Sources [1,898 B]
+Get:33 http://us.archive.ubuntu.com trusty-backports/main i386 Packages [13.3 kB]
+Get:34 http://us.archive.ubuntu.com trusty-backports/restricted i386 Packages [28 B]
+Get:35 http://us.archive.ubuntu.com trusty-backports/universe i386 Packages [43.2 kB]
+Get:36 http://us.archive.ubuntu.com trusty-backports/multiverse i386 Packages [1,552 B]
+Get:37 http://us.archive.ubuntu.com trusty-backports/main Translation-en [7,493 B]
+Get:38 http://us.archive.ubuntu.com trusty-backports/multiverse Translation-en [1,215 B]
+Get:39 http://us.archive.ubuntu.com trusty-backports/restricted Translation-en [28 B]
+Get:40 http://us.archive.ubuntu.com trusty-backports/universe Translation-en [36.8 kB]
+Hit http://us.archive.ubuntu.com trusty Release                                
+Hit http://us.archive.ubuntu.com trusty/main Sources                           
+Hit http://us.archive.ubuntu.com trusty/restricted Sources                     
+Hit http://us.archive.ubuntu.com trusty/universe Sources                       
+Hit http://us.archive.ubuntu.com trusty/multiverse Sources                     
+Hit http://us.archive.ubuntu.com trusty/main i386 Packages                     
+Hit http://us.archive.ubuntu.com trusty/restricted i386 Packages               
+Hit http://us.archive.ubuntu.com trusty/universe i386 Packages                 
+Hit http://us.archive.ubuntu.com trusty/multiverse i386 Packages               
+Hit http://us.archive.ubuntu.com trusty/main Translation-en                    
+Hit http://us.archive.ubuntu.com trusty/multiverse Translation-en              
+Hit http://us.archive.ubuntu.com trusty/restricted Translation-en              
+Hit http://us.archive.ubuntu.com trusty/universe Translation-en                
+Ign http://us.archive.ubuntu.com trusty/main Translation-en_US                 
+Ign http://us.archive.ubuntu.com trusty/multiverse Translation-en_US           
+Ign http://us.archive.ubuntu.com trusty/restricted Translation-en_US           
+Ign http://us.archive.ubuntu.com trusty/universe Translation-en_US             
+Fetched 4,085 kB in 17s (238 kB/s)                                             
+Reading package lists... Done
+al@al-MacBook:~$ sudo apt-get install ros-kinetic-desktop-full
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package ros-kinetic-desktop-full
+al@al-MacBook:~$ sudo rosdep init
+sudo: rosdep: command not found
+al@al-MacBook:~$ sude rosdep init rosdep update
+No command 'sude' found, did you mean:
+ Command 'sudo' from package 'sudo' (main)
+ Command 'sudo' from package 'sudo-ldap' (universe)
