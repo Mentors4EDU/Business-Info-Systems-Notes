@@ -89,3 +89,18 @@ al@al-MacBook:~$ sude rosdep init rosdep update
 No command 'sude' found, did you mean:
  Command 'sudo' from package 'sudo' (main)
  Command 'sudo' from package 'sudo-ldap' (universe)
+al@al-MacBook:~$ sudo apt-get install ros-kinetic-slam-gmapping
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package ros-kinetic-slam-gmapping
+al@al-MacBook:~$ sudo rosdep init
+sudo: rosdep: command not found
+al@al-MacBook:~$ sudo rosedep update
+sudo: rosedep: command not found
+al@al-MacBook:~$ echo "source /opt/ros/kinetic/setup.bash">> ~/.bashrc source ~/.bashrc
+al@al-MacBook:~$ sudo apt-get install python-rosinstall
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package python-rosinstall
