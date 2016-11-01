@@ -1,0 +1,2 @@
+http://youtube-playlist-analyzer.appspot.com/
+sum=0;for(i=0;i<json_items.length;i++){sum+=parseInt(json_items[i]['viewCount']);}console.log('Total Views: '+sum);
