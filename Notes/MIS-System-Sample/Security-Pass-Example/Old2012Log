@@ -1,0 +1,3631 @@
+'Old 2012 System Log
+'Xillinx Platform
+
+Xilinx Platform Studio (XPS)
+Xilinx EDK 13.4 Build EDK_O.87xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: ilmb - Superseded core for architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\_xps_tempmhsfilename.mhs line 71 
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: dlmb - Superseded core for architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\_xps_tempmhsfilename.mhs line 78 
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: dlmb_cntlr - Superseded core for architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\_xps_tempmhsfilename.mhs line 85 
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: ilmb_cntlr - Superseded core for architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\_xps_tempmhsfilename.mhs line 94 
+
+********************************************************************************
+At Local date and time: Mon Oct 29 19:16:37 2012
+ make -f system.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+
+psf2Edward -inp system.xmp -exit_on_error -dont_add_loginfo -edwver 1.2 -xml SDK\SDK_Export\hw/system.xml -lp C:/Xilinx/12.4/ISE_DS/edk_user_repository
+
+Release 13.4 - psf2Edward EDK_O.87xd (nt)
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: ilmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 84 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: dlmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 91 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: dlmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 98 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: ilmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 107 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: ilmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 84 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: dlmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 91 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: dlmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 98 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: ilmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 107 
+
+
+
+Checking platform configuration ...
+
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 10 slave(s) 
+
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+
+
+Checking port drivers...
+
+
+
+Performing Clock DRCs...
+
+
+
+Performing Reset DRCs...
+
+
+
+Overriding system level properties...
+
+WARNING:EDK:4180 - PORT: IWAIT, CONNECTOR: ilmb_LMB_Wait - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 417 
+
+WARNING:EDK:4180 - PORT: ICE, CONNECTOR: ilmb_LMB_CE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 418 
+
+WARNING:EDK:4180 - PORT: IUE, CONNECTOR: ilmb_LMB_UE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 419 
+
+WARNING:EDK:4180 - PORT: DWAIT, CONNECTOR: dlmb_LMB_Wait - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 455 
+
+WARNING:EDK:4180 - PORT: DCE, CONNECTOR: dlmb_LMB_CE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 456 
+
+WARNING:EDK:4180 - PORT: DUE, CONNECTOR: dlmb_LMB_UE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 457 
+
+WARNING:EDK:4180 - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found.
+
+   Port will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 239 
+
+WARNING:EDK:4181 - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 232 
+
+WARNING:EDK:4181 - PORT: bscan_reset, CONNECTOR: bscan_reset - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 233 
+
+WARNING:EDK:4181 - PORT: bscan_shift, CONNECTOR: bscan_shift - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 234 
+
+WARNING:EDK:4181 - PORT: bscan_update, CONNECTOR: bscan_update - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 235 
+
+WARNING:EDK:4181 - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 236 
+
+WARNING:EDK:4181 - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection
+
+   -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 237 
+
+WARNING:EDK:4181 - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 238 
+
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+
+   floating connection - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 190
+
+    
+
+WARNING:EDK:4181 - PORT: forward, CONNECTOR: dx5e_joystick_0_forward - floating
+
+   connection - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 277 
+
+
+
+Running system level update procedures...
+
+
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+
+
+Running system level DRCs...
+
+
+
+Performing System level DRCs on properties...
+
+
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Conversion to XML complete.
+
+xdsgen -inp system.xmp -report SDK\SDK_Export\hw/system.html -lp C:/Xilinx/12.4/ISE_DS/edk_user_repository -make_docs_local
+
+Release 13.4 - xdsgen EDK_O.87xd (nt)
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: ilmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 84 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: dlmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 91 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: dlmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 98 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: ilmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 107 
+
+Generated Block Diagram.
+
+Rasterizing microblaze_0.jpg.....
+
+Rasterizing mb_plb.jpg.....
+
+Rasterizing ilmb.jpg.....
+
+Rasterizing dlmb.jpg.....
+
+Rasterizing dlmb_cntlr.jpg.....
+
+Rasterizing ilmb_cntlr.jpg.....
+
+Rasterizing lmb_bram.jpg.....
+
+Rasterizing LEDs_8Bit.jpg.....
+
+Rasterizing RS232_PORT.jpg.....
+
+Rasterizing clock_generator_0.jpg.....
+
+Rasterizing mdm_0.jpg.....
+
+Rasterizing proc_sys_reset_0.jpg.....
+
+Rasterizing pwm_0.jpg.....
+
+Rasterizing data_timer.jpg.....
+
+Rasterizing control_timer.jpg.....
+
+Rasterizing xps_intc_0.jpg.....
+
+Rasterizing x7seg_0.jpg.....
+
+Rasterizing dx5e_joystick_0.jpg.....
+
+Rasterizing sparkfun_stick.jpg.....
+
+Rasterizing steering_pot_0.jpg.....
+
+Rasterizing mag_encoder_0.jpg.....
+
+Rasterizing Arduino_Serial.jpg.....
+
+Rasterizing system_blkd.jpg.....
+
+Report generated.
+
+Report generation completed.
+
+"****************************************************"
+
+"Creating system netlist for hardware specification.."
+
+"****************************************************"
+
+platgen -p xc3s1200efg320-5 -lang vhdl -intstyle default  -lp C:/Xilinx/12.4/ISE_DS/edk_user_repository  -msg __xps/ise/xmsgprops.lst system.mhs
+
+
+
+Release 13.4 - platgen Xilinx EDK 13.4 Build EDK_O.87xd
+
+ (nt)
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+
+
+
+Command Line: platgen -p xc3s1200efg320-5 -lang vhdl -intstyle default -lp
+
+C:/Xilinx/12.4/ISE_DS/edk_user_repository -msg __xps/ise/xmsgprops.lst
+
+system.mhs 
+
+
+
+WARNING:EDK - INFO:Security:71 - If a license for part 'xc3s1200e' is available,
+
+   it will be possible to use 'XPS_TDP' instead of 'XPS'.
+
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+
+   current version of Xilinx tools will continue to function, but you no longer
+
+   qualify for Xilinx software updates or new releases.
+
+
+
+
+
+Parse C:/repos/ora_fpga/botzilla_hardware/system.mhs ...
+
+
+
+Read MPD definitions ...
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: ilmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 84 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: dlmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 91 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: dlmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 98 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: ilmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 107 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: ilmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 84 
+
+WARNING:EDK:4088 - IPNAME: lmb_v10, INSTANCE: dlmb - Superseded core for
+
+   architecture 'spartan3e' - C:\repos\ora_fpga\botzilla_hardware\system.mhs
+
+   line 91 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: dlmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 98 
+
+WARNING:EDK:4088 - IPNAME: lmb_bram_if_cntlr, INSTANCE: ilmb_cntlr - Superseded
+
+   core for architecture 'spartan3e' -
+
+   C:\repos\ora_fpga\botzilla_hardware\system.mhs line 107 
+
+
+
+Overriding IP level properties ...
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_DCACHE_INTERFACE value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 367 
+
+
+
+Computing clock values...
+
+
+
+Performing IP level DRCs on properties...
+
+
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Address Map for Processor microblaze_0
+
+  (0000000000-0x00007fff) dlmb_cntlr	dlmb
+
+  (0000000000-0x00007fff) ilmb_cntlr	ilmb
+
+  (0x81400000-0x8140ffff) LEDs_8Bit	mb_plb
+
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+
+  (0x84000000-0x8400ffff) RS232_PORT	mb_plb
+
+  (0x84020000-0x8402ffff) Arduino_Serial	mb_plb
+
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+
+  (0xc2400000-0xc240ffff) mag_encoder_0	mb_plb
+
+  (0xcb000000-0xcb00ffff) dx5e_joystick_0	mb_plb
+
+  (0xcbc00000-0xcbc0ffff) pwm_0	mb_plb
+
+  (0xcea00000-0xcea0ffff) steering_pot_0	mb_plb
+
+  (0xcea20000-0xcea2ffff) sparkfun_stick	mb_plb
+
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+
+   C_PLBV46_NUM_MASTERS value to 2 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+
+   \plb_v46_v2_1_0.mpd line 78 
+
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+
+   C_PLBV46_NUM_SLAVES value to 10 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+
+   \plb_v46_v2_1_0.mpd line 79 
+
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+
+   C_PLBV46_MID_WIDTH value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+
+   \plb_v46_v2_1_0.mpd line 80 
+
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+
+   C_PLBV46_DWIDTH value to 32 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+
+   \plb_v46_v2_1_0.mpd line 82 
+
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+
+   C_LMB_NUM_SLAVES value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data
+
+   \lmb_v10_v2_1_0.mpd line 79 
+
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+
+   C_LMB_NUM_SLAVES value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data
+
+   \lmb_v10_v2_1_0.mpd line 79 
+
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+
+   PARAMETER C_MEMSIZE value to 0x8000 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+
+   ata\bram_block_v2_1_0.mpd line 76 
+
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:LEDs_8Bit - tool is overriding
+
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+
+   a\xps_gpio_v2_1_0.mpd line 81 
+
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:RS232_PORT - tool is overriding
+
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+
+   C_SPLB_MID_WIDTH value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 92 
+
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+
+   C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 93 
+
+INFO:EDK:4130 - IPNAME: pwm, INSTANCE:pwm_0 - tool is overriding PARAMETER
+
+   C_SPLB_DWIDTH value to 32 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\pwm_v3_00_a\data\pwm_v2_1_0.mpd
+
+   line 25 
+
+INFO:EDK:4130 - IPNAME: pwm, INSTANCE:pwm_0 - tool is overriding PARAMETER
+
+   C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\pwm_v3_00_a\data\pwm_v2_1_0.mpd
+
+   line 26 
+
+INFO:EDK:4130 - IPNAME: pwm, INSTANCE:pwm_0 - tool is overriding PARAMETER
+
+   C_SPLB_MID_WIDTH value to 1 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\pwm_v3_00_a\data\pwm_v2_1_0.mpd
+
+   line 27 
+
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding
+
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+
+   a\xps_intc_v2_1_0.mpd line 82 
+
+INFO:EDK:4130 - IPNAME: dx5e_joystick, INSTANCE:dx5e_joystick_0 - tool is
+
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\dx5e_joystick_v2_00_a\data\dx5e_jo
+
+   ystick_v2_1_0.mpd line 25 
+
+INFO:EDK:4130 - IPNAME: dx5e_joystick, INSTANCE:dx5e_joystick_0 - tool is
+
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\dx5e_joystick_v2_00_a\data\dx5e_jo
+
+   ystick_v2_1_0.mpd line 26 
+
+INFO:EDK:4130 - IPNAME: dx5e_joystick, INSTANCE:dx5e_joystick_0 - tool is
+
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\dx5e_joystick_v2_00_a\data\dx5e_jo
+
+   ystick_v2_1_0.mpd line 27 
+
+INFO:EDK:4130 - IPNAME: i2c_controller, INSTANCE:sparkfun_stick - tool is
+
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\i2c_controller_v1_00_a\data\i2c_co
+
+   ntroller_v2_1_0.mpd line 25 
+
+INFO:EDK:4130 - IPNAME: i2c_controller, INSTANCE:sparkfun_stick - tool is
+
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\i2c_controller_v1_00_a\data\i2c_co
+
+   ntroller_v2_1_0.mpd line 26 
+
+INFO:EDK:4130 - IPNAME: i2c_controller, INSTANCE:sparkfun_stick - tool is
+
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\i2c_controller_v1_00_a\data\i2c_co
+
+   ntroller_v2_1_0.mpd line 27 
+
+INFO:EDK:4130 - IPNAME: steering_pot, INSTANCE:steering_pot_0 - tool is
+
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\steering_pot_v4_00_a\data\steering
+
+   _pot_v2_1_0.mpd line 25 
+
+INFO:EDK:4130 - IPNAME: steering_pot, INSTANCE:steering_pot_0 - tool is
+
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\steering_pot_v4_00_a\data\steering
+
+   _pot_v2_1_0.mpd line 26 
+
+INFO:EDK:4130 - IPNAME: steering_pot, INSTANCE:steering_pot_0 - tool is
+
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\steering_pot_v4_00_a\data\steering
+
+   _pot_v2_1_0.mpd line 27 
+
+INFO:EDK:4130 - IPNAME: mag_encoder, INSTANCE:mag_encoder_0 - tool is overriding
+
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\mag_encoder_v1_00_a\data\mag_encod
+
+   er_v2_1_0.mpd line 25 
+
+INFO:EDK:4130 - IPNAME: mag_encoder, INSTANCE:mag_encoder_0 - tool is overriding
+
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\mag_encoder_v1_00_a\data\mag_encod
+
+   er_v2_1_0.mpd line 26 
+
+INFO:EDK:4130 - IPNAME: mag_encoder, INSTANCE:mag_encoder_0 - tool is overriding
+
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+
+   C:\repos\ora_fpga\botzilla_hardware\pcores\mag_encoder_v1_00_a\data\mag_encod
+
+   er_v2_1_0.mpd line 27 
+
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:Arduino_Serial - tool is
+
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+
+
+
+Checking platform address map ...
+
+
+
+Checking platform configuration ...
+
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 10 slave(s) 
+
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+
+
+Checking port drivers...
+
+WARNING:EDK:4180 - PORT: IWAIT, CONNECTOR: ilmb_LMB_Wait - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 417 
+
+WARNING:EDK:4180 - PORT: ICE, CONNECTOR: ilmb_LMB_CE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 418 
+
+WARNING:EDK:4180 - PORT: IUE, CONNECTOR: ilmb_LMB_UE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 419 
+
+WARNING:EDK:4180 - PORT: DWAIT, CONNECTOR: dlmb_LMB_Wait - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 455 
+
+WARNING:EDK:4180 - PORT: DCE, CONNECTOR: dlmb_LMB_CE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 456 
+
+WARNING:EDK:4180 - PORT: DUE, CONNECTOR: dlmb_LMB_UE - No driver found. Port
+
+   will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 457 
+
+WARNING:EDK:4180 - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found.
+
+   Port will be driven to GND -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 239 
+
+WARNING:EDK:4181 - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 232 
+
+WARNING:EDK:4181 - PORT: bscan_reset, CONNECTOR: bscan_reset - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 233 
+
+WARNING:EDK:4181 - PORT: bscan_shift, CONNECTOR: bscan_shift - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 234 
+
+WARNING:EDK:4181 - PORT: bscan_update, CONNECTOR: bscan_update - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 235 
+
+WARNING:EDK:4181 - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 236 
+
+WARNING:EDK:4181 - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection
+
+   -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 237 
+
+WARNING:EDK:4181 - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating
+
+   connection -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+
+   _v2_1_0.mpd line 238 
+
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+
+   floating connection - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 190
+
+    
+
+WARNING:EDK:4181 - PORT: forward, CONNECTOR: dx5e_joystick_0_forward - floating
+
+   connection - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 277 
+
+
+
+Performing Clock DRCs...
+
+
+
+Performing Reset DRCs...
+
+
+
+Overriding system level properties...
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_D_PLB value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 229 
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_I_PLB value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 232 
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 332 
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 362 
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_USE_INTERRUPT value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 396 
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_USE_EXT_BRK value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 397 
+
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_20_b\d
+
+   ata\microblaze_v2_1_0.mpd line 398 
+
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+
+   overriding PARAMETER C_MASK value to 0x80000000 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2
+
+   _10_b\data\lmb_bram_if_cntlr_v2_1_0.mpd line 84 
+
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+
+   overriding PARAMETER C_MASK value to 0x80000000 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2
+
+   _10_b\data\lmb_bram_if_cntlr_v2_1_0.mpd line 84 
+
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+
+   PARAMETER C_NUM_INTR_INPUTS value to 4 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+
+   a\xps_intc_v2_1_0.mpd line 86 
+
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111111 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+
+   a\xps_intc_v2_1_0.mpd line 87 
+
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+
+   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+
+   a\xps_intc_v2_1_0.mpd line 88 
+
+INFO:EDK:4130 - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding
+
+   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+
+   C:\Xilinx\13.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+
+   a\xps_intc_v2_1_0.mpd line 89 
+
+
+
+Running system level update procedures...
+
+
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+
+
+Running system level DRCs...
+
+
+
+Performing System level DRCs on properties...
+
+
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+
+
+It can be overridden by constraints placed in the system.ucf file.
+
+
+
+
+
+INFO: The ilmb core has constraints automatically generated by XPS in
+
+implementation/ilmb_wrapper/ilmb_wrapper.ucf.
+
+
+It can be overridden by constraints placed in the system.ucf file.
+
+
+
+
+
+INFO: The dlmb core has constraints automatically generated by XPS in
+
+implementation/dlmb_wrapper/dlmb_wrapper.ucf.
+
+
+It can be overridden by constraints placed in the system.ucf file.
+
+
+
+
+
+
+
+Modify defaults ...
+
+
+
+Creating stub ...
+
+
+
+Processing licensed instances ...
+
+Completion time: 0.00 seconds
+
+
+
+Creating hardware output directories ...
+
+
+
+Managing hardware (BBD-specified) netlist files ...
+
+
+
+Managing cache ...
+
+
+
+Elaborating instances ...
+
+IPNAME:bram_block INSTANCE:lmb_bram -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 116 - elaborating IP
+
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 151 - elaborating IP
+
+ClkGen elaborate status: PASSED
+
+
+----------------------------------------
+
+
+
+
+Writing HDL for elaborated instances ...
+
+
+
+Inserting wrapper level ...
+
+Completion time: 0.00 seconds
+
+
+
+Constructing platform-level connectivity ...
+
+Completion time: 0.00 seconds
+
+
+
+Writing (top-level) BMM ...
+
+
+
+Writing (top-level and wrappers) HDL ...
+
+
+
+Generating synthesis project file ...
+
+
+
+Running XST synthesis ...
+
+
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+
+INSTANCE:microblaze_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 50 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:mb_plb - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 77 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:ilmb - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 84 - Running
+
+XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:dlmb - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 91 - Running
+
+XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:dlmb_cntlr - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 98 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:ilmb_cntlr - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 107 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:lmb_bram - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 116 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:leds_8bit - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 123 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:rs232_port - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 136 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:clock_generator_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line
+
+151 - Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:mdm_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 168 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:proc_sys_reset_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line
+
+180 - Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:pwm_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 193 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:data_timer - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 213 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:control_timer - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 222
+
+- Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:xps_intc_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 231 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:x7seg_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 241 -
+
+Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:dx5e_joystick_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line
+
+267 - Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:sparkfun_stick - C:\repos\ora_fpga\botzilla_hardware\system.mhs line
+
+282 - Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:steering_pot_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line
+
+293 - Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:mag_encoder_0 - C:\repos\ora_fpga\botzilla_hardware\system.mhs line 307
+
+- Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+INSTANCE:arduino_serial - C:\repos\ora_fpga\botzilla_hardware\system.mhs line
+
+323 - Running XST synthesis
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+Running NGCBUILD ...
+
+IPNAME:microblaze_0_wrapper INSTANCE:microblaze_0 -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 50 - Running NGCBUILD
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+
+xc3s1200efg320-5 -intstyle silent -i -sd .. microblaze_0_wrapper.ngc
+
+../microblaze_0_wrapper
+
+
+
+Reading NGO file
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/microblaze_0_wrapper/microbl
+
+aze_0_wrapper.ngc" ...
+
+
+
+Partition Implementation Status
+
+-------------------------------
+
+
+
+  No Partitions were found in this design.
+
+
+
+-------------------------------
+
+
+
+NGCBUILD Design Results Summary:
+
+  Number of errors:     0
+
+  Number of warnings:   0
+
+
+
+Writing NGC file "../microblaze_0_wrapper.ngc" ...
+
+Total REAL time to NGCBUILD completion:  6 sec
+
+Total CPU time to NGCBUILD completion:   4 sec
+
+
+
+Writing NGCBUILD log file "../microblaze_0_wrapper.blc"...
+
+
+
+NGCBUILD done.
+
+IPNAME:ilmb_wrapper INSTANCE:ilmb -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 84 - Running NGCBUILD
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+
+xc3s1200efg320-5 -intstyle silent -i -sd .. ilmb_wrapper.ngc ../ilmb_wrapper
+
+
+
+Reading NGO file
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/ilmb_wrapper/ilmb_wrapper.ng
+
+c" ...
+
+
+
+Partition Implementation Status
+
+-------------------------------
+
+
+
+  No Partitions were found in this design.
+
+
+
+-------------------------------
+
+
+
+NGCBUILD Design Results Summary:
+
+  Number of errors:     0
+
+  Number of warnings:   0
+
+
+
+Writing NGC file "../ilmb_wrapper.ngc" ...
+
+Total REAL time to NGCBUILD completion:  3 sec
+
+Total CPU time to NGCBUILD completion:   3 sec
+
+
+
+Writing NGCBUILD log file "../ilmb_wrapper.blc"...
+
+
+
+NGCBUILD done.
+
+IPNAME:dlmb_wrapper INSTANCE:dlmb -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 91 - Running NGCBUILD
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+
+xc3s1200efg320-5 -intstyle silent -i -sd .. dlmb_wrapper.ngc ../dlmb_wrapper
+
+
+
+Reading NGO file
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/dlmb_wrapper/dlmb_wrapper.ng
+
+c" ...
+
+
+
+Partition Implementation Status
+
+-------------------------------
+
+
+
+  No Partitions were found in this design.
+
+
+
+-------------------------------
+
+
+
+NGCBUILD Design Results Summary:
+
+  Number of errors:     0
+
+  Number of warnings:   0
+
+
+
+Writing NGC file "../dlmb_wrapper.ngc" ...
+
+Total REAL time to NGCBUILD completion:  2 sec
+
+Total CPU time to NGCBUILD completion:   2 sec
+
+
+
+Writing NGCBUILD log file "../dlmb_wrapper.blc"...
+
+
+
+NGCBUILD done.
+
+IPNAME:clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 151 - Running NGCBUILD
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+
+xc3s1200efg320-5 -intstyle silent -i -sd .. clock_generator_0_wrapper.ngc
+
+../clock_generator_0_wrapper
+
+
+
+Reading NGO file
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/clock_generator_0_wrapper/cl
+
+ock_generator_0_wrapper.ngc" ...
+
+
+
+Partition Implementation Status
+
+-------------------------------
+
+
+
+  No Partitions were found in this design.
+
+
+
+-------------------------------
+
+
+
+NGCBUILD Design Results Summary:
+
+  Number of errors:     0
+
+  Number of warnings:   0
+
+
+
+Writing NGC file "../clock_generator_0_wrapper.ngc" ...
+
+Total REAL time to NGCBUILD completion:  2 sec
+
+Total CPU time to NGCBUILD completion:   2 sec
+
+
+
+Writing NGCBUILD log file "../clock_generator_0_wrapper.blc"...
+
+
+
+NGCBUILD done.
+
+IPNAME:xps_intc_0_wrapper INSTANCE:xps_intc_0 -
+
+C:\repos\ora_fpga\botzilla_hardware\system.mhs line 231 - Running NGCBUILD
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+
+xc3s1200efg320-5 -intstyle silent -i -sd .. xps_intc_0_wrapper.ngc
+
+../xps_intc_0_wrapper
+
+
+
+Reading NGO file
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/xps_intc_0_wrapper/xps_intc_
+
+0_wrapper.ngc" ...
+
+
+
+Partition Implementation Status
+
+-------------------------------
+
+
+
+  No Partitions were found in this design.
+
+
+
+-------------------------------
+
+
+
+NGCBUILD Design Results Summary:
+
+  Number of errors:     0
+
+  Number of warnings:   0
+
+
+
+Writing NGC file "../xps_intc_0_wrapper.ngc" ...
+
+Total REAL time to NGCBUILD completion:  2 sec
+
+Total CPU time to NGCBUILD completion:   2 sec
+
+
+
+Writing NGCBUILD log file "../xps_intc_0_wrapper.blc"...
+
+
+
+NGCBUILD done.
+
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+
+   If any constraint needs to be overridden, this should be done by modifying
+
+   the data/system.ucf file.
+
+
+
+Rebuilding cache ...
+
+
+
+Total run time: 869.00 seconds
+
+"Running synthesis..."
+
+cd synthesis & synthesis.cmd
+
+"xst -ifn "system_xst.scr" -intstyle silent"
+
+"Running XST synthesis ..."
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+"XST completed"
+
+"*********************************************"
+
+"Running Xilinx Implementation tools.."
+
+"*********************************************"
+
+xflow -wd implementation -p xc3s1200efg320-5 -implement xflow.opt system.ngc
+
+Release 13.4 - Xflow O.87xd (nt)
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+xflow.exe -wd implementation -p xc3s1200efg320-5 -implement xflow.opt system.ngc
+
+ 
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+.... Copying flowfile C:/Xilinx/13.4/ISE_DS/ISE/xilinx/data/fpga.flw into
+
+working directory C:/repos/ora_fpga/botzilla_hardware/implementation 
+
+
+
+Using Flow File: C:/repos/ora_fpga/botzilla_hardware/implementation/fpga.flw 
+
+Using Option File(s): 
+
+ C:/repos/ora_fpga/botzilla_hardware/implementation/xflow.opt 
+
+
+
+Creating Script File ... 
+
+
+
+#----------------------------------------------#
+
+# Starting program ngdbuild
+
+# ngdbuild -p xc3s1200efg320-5 -nt timestamp -bm system.bmm
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/system.ngc" -uc system.ucf
+
+system.ngd 
+
+#----------------------------------------------#
+
+Release 13.4 - ngdbuild O.87xd (nt)
+
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file
+
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+
+
+
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -p
+
+
+xc3s1200efg320-5 -nt timestamp -bm system.bmm
+
+
+C:/repos/ora_fpga/botzilla_hardware/implementation/system.ngc -uc system.ucf
+
+
+system.ngd
+
+
+
+
+
+Reading NGO file "C:/repos/ora_fpga/botzilla_hardware/implementation/system.ngc"
+
+
+...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/microblaze_0_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/mb_plb_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/ilmb_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/dlmb_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/dlmb_cntlr_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/ilmb_cntlr_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/lmb_bram_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/leds_8bit_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/rs232_port_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/clock_generator_0_wrapper.ng
+
+
+c"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/mdm_0_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/proc_sys_reset_0_wrapper.ngc
+
+
+"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/pwm_0_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/data_timer_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/control_timer_wrapper.ngc"..
+
+
+.
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/xps_intc_0_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/x7seg_0_wrapper.ngc"...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/dx5e_joystick_0_wrapper.ngc"
+
+
+...
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/sparkfun_stick_wrapper.ngc".
+
+
+..
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/steering_pot_0_wrapper.ngc".
+
+
+..
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/mag_encoder_0_wrapper.ngc"..
+
+
+.
+
+
+Loading design module
+
+
+"C:/repos/ora_fpga/botzilla_hardware/implementation/arduino_serial_wrapper.ngc".
+
+
+..
+
+
+Gathering constraint information from source properties...
+
+
+Done.
+
+
+
+
+
+Annotating constraints to design from ucf file "system.ucf" ...
+
+
+Resolving constraint associations...
+
+
+Checking Constraint Associations...
+
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+
+
+   'TS_sys_clk_pin', was traced into DCM_SP instance
+
+
+   clock_generator_0/DCM0_INST/Using_Virtex.DCM_INST. The following new TNM
+
+
+   groups and period specifications were generated at the DCM_SP output(s): 
+
+
+   CLK0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD
+
+
+   "clock_generator_0_clock_generator_0_SIG_DCM0_CLK0" TS_sys_clk_pin HIGH 50>
+
+
+
+
+
+Done...
+
+
+
+
+
+Processing BMM file "system.bmm" ...
+
+
+
+
+
+Checking expanded design ...
+
+
+WARNING:NgdBuild:443 - SFF primitive
+
+
+   'sparkfun_stick/sparkfun_stick/WRPFIFO_TOP_I/USE_SRL_CORE.I_SRL_MEM/I_ADDR_CN
+
+
+   TR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+
+
+WARNING:NgdBuild:478 - clock net mdm_0/bscan_drck1 with clock driver
+
+
+   mdm_0/mdm_0/BUFG_DRCK1 drives no clock pins
+
+
+
+
+
+Partition Implementation Status
+
+
+-------------------------------
+
+
+
+
+
+  No Partitions were found in this design.
+
+
+
+
+
+-------------------------------
+
+
+
+
+
+NGDBUILD Design Results Summary:
+
+
+  Number of errors:     0
+
+
+  Number of warnings:   2
+
+
+
+
+
+Writing NGD file "system.ngd" ...
+
+
+Total REAL time to NGDBUILD completion:  30 sec
+
+
+Total CPU time to NGDBUILD completion:   28 sec
+
+
+
+
+
+Writing NGDBUILD log file "system.bld"...
+
+
+
+
+
+NGDBUILD done.
+
+
+
+
+
+
+
+
+#----------------------------------------------#
+
+# Starting program map
+
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+
+#----------------------------------------------#
+
+Release 13.4 - Map O.87xd (nt)
+
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file
+
+
+<C:/Xilinx/13.4/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+
+
+<C:/Xilinx/13.4/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+
+
+Using target part "3s1200efg320-5".
+
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+INFO:Security:54 - 'xc3s1200e' is a WebPack part.
+
+
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+
+
+version of Xilinx tools will continue to function, but you no longer qualify for
+
+
+Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+
+
+Mapping design into LUTs...
+
+
+Writing file system_map.ngm...
+
+
+Running directed packing...
+
+
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+
+
+   slice components.  The resulting carry chain will have suboptimal timing.
+
+
+   	steering_pot_0/steering_pot_0/USER_LOGIC_I/U1/Mcompar_state_cmp_ge0002_cy<8>
+
+
+   	steering_pot_0/steering_pot_0/USER_LOGIC_I/U1/Mcount_bit_count_cy<0>
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<27>_2_f5_41 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<29>_2_f5_2_f5_0.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<27>_2_f5_42 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<29>_2_f5_2_f5_1.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<27>_2_f5_43 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<29>_2_f5_2_f5_2.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<27>_4 failed to merge with F5
+
+
+   multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<29>_2_f5_2_f5_3.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<27>_2_f5_44 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<29>_2_f5_2_f5_4.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<27>_2_f5_4 failed to merge with
+
+
+   F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<29>_2_f5_2_f5.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<26>_41 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<24>_2_f5_0.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<26>_42 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<24>_2_f5_1.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<26>_43 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<24>_2_f5_2.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<26>_44 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<24>_2_f5_3.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<26>_45 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<24>_2_f5_4.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<25>_42 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<27>_2_f5_0.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<25>_43 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<27>_2_f5_1.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<25>_45 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<27>_2_f5_2.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<25>_4 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<27>_2_f5_3.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<25>_2_f5_41 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<27>_2_f5_4.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<28>_2_f5_4 failed to merge with
+
+
+   F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<26>_2_f5_2_f5_0.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<28>_2_f5_41 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<26>_2_f5_2_f5_1.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<28>_2_f5_42 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<26>_2_f5_2_f5_2.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<28>_2_f5_43 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<26>_2_f5_2_f5_3.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<28>_2_f5_45 failed to merge
+
+
+   with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<26>_2_f5_2_f5_4.  There is a
+
+
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<26>_4 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<24>_2_f5.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<25>_41 failed to merge with F5 multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Barrel_Sh
+
+
+   ifter_I/Mmux_ex_mux2<27>_2_f5.  There is a conflict for the FXMUX.  The
+
+
+   design will exhibit suboptimal timing.
+
+
+WARNING:Pack:266 - The function generator
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<28>_4 failed to merge with F5
+
+
+   multiplexer
+
+
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use
+
+
+   _FPU.Using_FPU_Extended.fpu_conv_I1/Mmux_mux2<26>_2_f5.  There is a conflict
+
+
+   for the FXMUX.  The design will exhibit suboptimal timing.
+
+
+Running delay-based LUT packing...
+
+
+Updating timing models...
+
+
+Running timing-driven placement...
+
+
+Total REAL time at the beginning of Placer: 36 secs 
+
+
+Total CPU  time at the beginning of Placer: 20 secs 
+
+
+
+
+
+Phase 1.1  Initial Placement Analysis
+
+
+Phase 1.1  Initial Placement Analysis (Checksum:64d2e0b) REAL time: 42 secs 
+
+
+
+
+
+Phase 2.7  Design Feasibility Check
+
+
+Phase 2.7  Design Feasibility Check (Checksum:64d2e0b) REAL time: 42 secs 
+
+
+
+
+
+Phase 3.31  Local Placement Optimization
+
+
+Phase 3.31  Local Placement Optimization (Checksum:c5e997e6) REAL time: 42 secs 
+
+
+
+
+
+Phase 4.2  Initial Clock and IO Placement
+
+
+
+
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:d35cb715) REAL time: 55 secs 
+
+
+
+
+
+Phase 5.30  Global Clock Region Assignment
+
+
+Phase 5.30  Global Clock Region Assignment (Checksum:d35cb715) REAL time: 55 secs 
+
+
+
+
+
+Phase 6.36  Local Placement Optimization
+
+
+Phase 6.36  Local Placement Optimization (Checksum:d35cb715) REAL time: 55 secs 
+
+
+
+
+
+Phase 7.8  Global Placement
+
+
+.......................
+
+
+.....................................................................................................................................
+
+
+...
+
+
+...............................
+
+
+Phase 7.8  Global Placement (Checksum:61590ebf) REAL time: 1 mins 32 secs 
+
+
+
+
+
+Phase 8.5  Local Placement Optimization
+
+
+Phase 8.5  Local Placement Optimization (Checksum:61590ebf) REAL time: 1 mins 33 secs 
+
+
+
+
+
+Phase 9.18  Placement Optimization
+
+
+Phase 9.18  Placement Optimization (Checksum:8ace754f) REAL time: 2 mins 4 secs 
+
+
+
+
+
+Phase 10.5  Local Placement Optimization
+
+
+Phase 10.5  Local Placement Optimization (Checksum:8ace754f) REAL time: 2 mins 4 secs 
+
+
+
+
+
+Total REAL time to Placer completion: 2 mins 6 secs 
+
+
+Total CPU  time to Placer completion: 1 mins 37 secs 
+
+
+Running post-placement packing...
+
+
+
+
+
+Design Summary:
+
+
+Number of errors:      0
+
+
+Number of warnings:   35
+
+
+Logic Utilization:
+
+
+  Number of Slice Flip Flops:         5,305 out of  17,344   30
+
+
+  Number of 4 input LUTs:             8,053 out of  17,344   46
+
+
+Logic Distribution:
+
+
+  Number of occupied Slices:          5,644 out of   8,672   65
+
+
+    Number of Slices containing only related logic:   5,644 out of   5,644 100
+
+
+    Number of Slices containing unrelated logic:          0 out of   5,644   0
+
+
+      *See NOTES below for an explanation of the effects of unrelated logic.
+
+
+  Total Number of 4 input LUTs:       8,690 out of  17,344   50
+
+
+    Number used as logic:             7,440
+
+
+    Number used as a route-thru:        637
+
+
+    Number used for Dual Port RAMs:     384
+
+
+      (Two LUTs used per Dual Port RAM)
+
+
+    Number used as Shift registers:     229
+
+
+
+
+
+  The Slice Logic Distribution report is not meaningful if the design is
+
+
+  over-mapped for a non-slice resource or if Placement fails.
+
+
+
+
+
+  Number of bonded IOBs:                 49 out of     250   19
+
+
+    IOB Flip Flops:                      28
+
+
+  Number of RAMB16s:                     17 out of      28   60
+
+
+  Number of BUFGMUXs:                     6 out of      24   25
+
+
+  Number of DCMs:                         1 out of       8   12
+
+
+  Number of BSCANs:                       1 out of       1  100
+
+
+  Number of MULT18X18SIOs:                8 out of      28   28
+
+
+
+
+
+Average Fanout of Non-Clock Nets:                3.43
+
+
+
+
+
+Peak Memory Usage:  353 MB
+
+
+Total REAL time to MAP completion:  2 mins 12 secs 
+
+
+Total CPU time to MAP completion:   1 mins 43 secs 
+
+
+
+
+
+Mapping completed.
+
+
+See MAP report file "system_map.mrp" for details.
+
+
+
+
+
+
+
+
+#----------------------------------------------#
+
+# Starting program par
+
+# par -w -ol high system_map.ncd system.ncd system.pcf 
+
+#----------------------------------------------#
+
+Release 13.4 - par O.87xd (nt)
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/13.4/ISE_DS/EDK/data/parBmgr.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/data/parBmgr.acd>
+
+
+
+
+
+
+
+Constraints file: system.pcf.
+
+Loading device for application Rf_Device from file '3s1200e.nph' in environment
+
+C:\Xilinx\13.4\ISE_DS\ISE\;C:\Xilinx\13.4\ISE_DS\EDK.
+
+   "system" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -5
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+INFO:Security:54 - 'xc3s1200e' is a WebPack part.
+
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+
+----------------------------------------------------------------------
+
+
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+
+
+
+
+Device speed data version:  "PRODUCTION 1.27 2012-01-07".
+
+
+
+
+
+
+
+Design Summary Report:
+
+
+
+ Number of External IOBs                          49 out of 250    19
+
+
+
+   Number of External Input IOBs                 17
+
+
+
+      Number of External Input IBUFs             17
+
+        Number of LOCed External Input IBUFs     17 out of 17    100
+
+
+
+
+
+   Number of External Output IOBs                31
+
+
+
+      Number of External Output IOBs             31
+
+        Number of LOCed External Output IOBs     31 out of 31    100
+
+
+
+
+
+   Number of External Bidir IOBs                  1
+
+
+
+      Number of External Bidir IOBs               1
+
+        Number of LOCed External Bidir IOBs       1 out of 1     100
+
+
+
+
+
+   Number of BSCANs                          1 out of 1     100
+
+   Number of BUFGMUXs                        6 out of 24     25
+
+   Number of DCMs                            1 out of 8      12
+
+   Number of MULT18X18SIOs                   8 out of 28     28
+
+   Number of RAMB16s                        17 out of 28     60
+
+   Number of Slices                       5644 out of 8672   65
+
+      Number of SLICEMs                    365 out of 4336    8
+
+
+
+
+
+
+
+Overall effort level (-ol):   High 
+
+Router effort level (-rl):    High 
+
+
+
+Starting initial Timing Analysis.  REAL time: 18 secs 
+
+Finished initial Timing Analysis.  REAL time: 19 secs 
+
+
+
+WARNING:Par:288 - The signal dlmb_LMB_ABus<31> has no load.  PAR will not attempt to route this signal.
+
+WARNING:Par:288 - The signal dlmb_LMB_ABus<30> has no load.  PAR will not attempt to route this signal.
+
+Starting Router
+
+
+
+
+
+Phase  1  : 43256 unrouted;      REAL time: 27 secs 
+
+
+
+Phase  2  : 38187 unrouted;      REAL time: 28 secs 
+
+
+
+Phase  3  : 13217 unrouted;      REAL time: 35 secs 
+
+
+
+Phase  4  : 13217 unrouted; (Setup:0, Hold:22, Component Switching Limit:0)     REAL time: 36 secs 
+
+
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
+
+
+
+Updating file: system.ncd with current fully routed design.
+
+
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 58 secs 
+
+
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
+
+
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 3 secs 
+
+WARNING:Route:455 - CLK Net:mdm_0/Dbg_Update_1 may have excessive skew because 
+
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+
+WARNING:Route:455 - CLK Net:fpga_0_clk_1_sys_clk_pin_IBUFG may have excessive skew because 
+
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+
+
+
+Total REAL time to Router completion: 1 mins 3 secs 
+
+Total CPU time to Router completion: 56 secs 
+
+
+
+Partition Implementation Status
+
+-------------------------------
+
+
+
+  No Partitions were found in this design.
+
+
+
+-------------------------------
+
+
+
+Generating "PAR" statistics.
+
+
+
+**************************
+
+Generating Clock Report
+
+**************************
+
+
+
++---------------------+--------------+------+------+------------+-------------+
+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
+
++---------------------+--------------+------+------+------------+-------------+
+
+|      clk_50_0000MHz | BUFGMUX_X1Y10| No   | 4012 |  0.184     |  0.332      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|     mdm_0/Dbg_Clk_1 |  BUFGMUX_X1Y1| No   |  156 |  0.177     |  0.325      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|mag_encoder_0/mag_en |              |      |      |            |             |
+
+|coder_0/USER_LOGIC_I |              |      |      |            |             |
+
+| /U4/Mmux_clkscale_4 |  BUFGMUX_X2Y1| No   |   39 |  0.113     |  0.326      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|mag_encoder_0/mag_en |              |      |      |            |             |
+
+|coder_0/USER_LOGIC_I |              |      |      |            |             |
+
+| /U1/Mmux_clkscale_4 | BUFGMUX_X2Y11| No   |   38 |  0.132     |  0.319      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|mag_encoder_0/mag_en |              |      |      |            |             |
+
+|coder_0/USER_LOGIC_I |              |      |      |            |             |
+
+| /U2/Mmux_clkscale_4 | BUFGMUX_X1Y11| No   |   41 |  0.123     |  0.324      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|mag_encoder_0/mag_en |              |      |      |            |             |
+
+|coder_0/USER_LOGIC_I |              |      |      |            |             |
+
+| /U3/Mmux_clkscale_4 |  BUFGMUX_X1Y0| No   |   38 |  0.106     |  0.265      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|  mdm_0/Dbg_Update_1 |         Local|      |   36 |  1.210     |  2.774      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|data_timer_Interrupt |              |      |      |            |             |
+
+|                     |         Local|      |    1 |  0.000     |  1.058      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|fpga_0_clk_1_sys_clk |              |      |      |            |             |
+
+|          _pin_IBUFG |         Local|      |    4 |  0.405     |  1.529      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|Arduino_Serial_Inter |              |      |      |            |             |
+
+|                rupt |         Local|      |    1 |  0.000     |  1.405      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|RS232_PORT_Interrupt |              |      |      |            |             |
+
+|                     |         Local|      |    1 |  0.000     |  0.889      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+|control_timer_Interr |              |      |      |            |             |
+
+|                 upt |         Local|      |    1 |  0.000     |  1.017      |
+
++---------------------+--------------+------+------+------------+-------------+
+
+
+
+* Net Skew is the difference between the minimum and maximum routing
+
+only delays for the net. Note this is different from Clock Skew which
+
+is reported in TRCE timing report. Clock Skew is the difference between
+
+the minimum and maximum path delays which includes logic delays.
+
+
+
+* The fanout is the number of component pins not the individual BEL loads,
+
+for example SLICE loads not FF loads.
+
+
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+
+
+Asterisk (*) preceding a constraint indicates it was not met.
+
+   This may be due to a setup or hold violation.
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+
+                                            |             |    Slack   | Achievable | Errors |    Score   
+
+----------------------------------------------------------------------------------------------------------
+
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     1.177ns|    18.823ns|       0|           0
+
+  G_DCM0_CLK0 = PERIOD TIMEGRP         "clo | HOLD        |     0.593ns|            |       0|           0
+
+  ck_generator_0_clock_generator_0_SIG_DCM0 |             |            |            |        |            
+
+  _CLK0" TS_sys_clk_pin         HIGH 50|             |            |            |        |            
+
+----------------------------------------------------------------------------------------------------------
+
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    17.697ns|     2.303ns|       0|           0
+
+  pin" 50 MHz HIGH 50| HOLD        |     0.874ns|            |       0|           0
+
+                                            | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Derived Constraint Report
+
+Review Timing Report for more details on the following derived constraints.
+
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+
+Derived Constraints for TS_sys_clk_pin
+
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
+
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+|TS_sys_clk_pin                 |     20.000ns|      6.000ns|     18.823ns|            0|            0|            3|       901811|
+
+| TS_clock_generator_0_clock_gen|     20.000ns|     18.823ns|          N/A|            0|            0|       901811|            0|
+
+| erator_0_SIG_DCM0_CLK0        |             |             |             |             |             |             |             |
+
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+
+All constraints were met.
+
+
+
+
+
+Generating Pad Report.
+
+
+
+All signals are completely routed.
+
+
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+
+
+Total REAL time to PAR completion: 1 mins 8 secs 
+
+Total CPU time to PAR completion: 1 mins 
+
+
+
+Peak Memory Usage:  362 MB
+
+
+
+Placer: Placement generated during map.
+
+Routing: Completed - No errors found.
+
+Timing: Completed - No errors found.
+
+
+
+Number of error messages: 0
+
+Number of warning messages: 6
+
+Number of info messages: 0
+
+
+
+Writing design to file system.ncd
+
+
+
+
+
+
+
+PAR done!
+
+
+
+
+
+
+
+#----------------------------------------------#
+
+# Starting program post_par_trce
+
+# trce -e 3 -xml system.twx system.ncd system.pcf 
+
+#----------------------------------------------#
+
+Release 13.4 - Trace  (nt)
+
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+
+
+
+
+
+
+PMSPEC -- Overriding Xilinx file
+
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3e/data/spartan3e.acd> with local file
+
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3e/data/spartan3e.acd>
+
+
+Loading device for application Rf_Device from file '3s1200e.nph' in environment
+
+
+C:\Xilinx\13.4\ISE_DS\ISE\;C:\Xilinx\13.4\ISE_DS\EDK.
+
+
+   "system" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -5
+
+
+--------------------------------------------------------------------------------
+
+
+Release 13.4 Trace  (nt)
+
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+
+
+
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -e 3 -xml system.twx
+
+
+system.ncd system.pcf
+
+
+
+
+
+
+
+
+Design file:              system.ncd
+
+
+Physical constraint file: system.pcf
+
+
+Device,speed:             xc3s1200e,-5 (PRODUCTION 1.27 2012-01-07)
+
+
+Report level:             error report
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+
+
+   option. All paths that are not constrained will be reported in the
+
+
+   unconstrained paths section(s) of the report.
+
+
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+
+
+   50 Ohm transmission line loading model.  For the details of this model, and
+
+
+   for more information on accounting for different loading conditions, please
+
+
+   see the device datasheet.
+
+
+INFO:Timing:3390 - This architecture does not support a default System Jitter
+
+
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock
+
+
+   Uncertainty calculation.
+
+
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
+
+
+   'Phase Error' calculations, these terms will be zero in the Clock Uncertainty
+
+
+   calculation.  Please make appropriate modification to SYSTEM_JITTER to
+
+
+   account for the unsupported Discrete Jitter and Phase Error.
+
+
+
+
+
+
+
+
+Timing summary:
+
+
+---------------
+
+
+
+
+
+Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
+
+
+
+
+
+Constraints cover 901814 paths, 0 nets, and 38213 connections
+
+
+
+
+
+Design statistics:
+
+
+   Minimum period:  18.823ns (Maximum frequency:  53.126MHz)
+
+
+
+
+
+
+
+
+Analysis completed Mon Oct 29 19:38:21 2012
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+Generating Report ...
+
+
+
+
+
+Number of warnings: 0
+
+
+Number of info messages: 5
+
+
+Total time: 20 secs 
+
+
+
+
+
+
+xflow done!
+
+touch __xps/system_routed
+
+xilperl C:/Xilinx/13.4/ISE_DS/EDK/data/fpga_impl/observe_par.pl -error yes implementation/system.par
+
+Analyzing implementation/system.par
+
+"*********************************************"
+
+"Running Bitgen.."
+
+"*********************************************"
+
+cd implementation & bitgen -w -f bitgen.ut system & cd ..
+
+Release 13.4 - Bitgen O.87xd (nt)
+
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+PMSPEC -- Overriding Xilinx file
+
+<C:/Xilinx/13.4/ISE_DS/EDK/spartan3e/data/spartan3e.acd> with local file
+
+<C:/Xilinx/13.4/ISE_DS/ISE/spartan3e/data/spartan3e.acd>
+
+Loading device for application Rf_Device from file '3s1200e.nph' in environment
+
+C:\Xilinx\13.4\ISE_DS\ISE\;C:\Xilinx\13.4\ISE_DS\EDK.
+
+   "system" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -5
+
+Opened constraints file system.pcf.
+
+
+
+Mon Oct 29 19:38:32 2012
+
+
+
+Running DRC.
+
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<31>> is incomplete. The
+
+   signal does not drive any load pins in the design.
+
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<30>> is incomplete. The
+
+   signal does not drive any load pins in the design.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA0> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.A>:<RAMB16_RAMB16A>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA1> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.A>:<RAMB16_RAMB16A>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOB0> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.B>:<RAMB16_RAMB16B>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOB1> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.B>:<RAMB16_RAMB16B>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.B>:<RAMB16_RAMB16B>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.B>:<RAMB16_RAMB16B>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.B>:<RAMB16_RAMB16B>.
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+
+   block:<microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Mo
+
+   dule_I/Use_BTC_2.BTC_RAM_Module/Using_B16_S36.Not_Using_Byte_Enable_BRAM36.Th
+
+   e_BRAMs[0].RAMB16_S36_S36_1.B>:<RAMB16_RAMB16B>.
+
+DRC detected 0 errors and 10 warnings.  Please see the previously displayed
+
+individual error or warning messages for more details.
+
+INFO:Security:54 - 'xc3s1200e' is a WebPack part.
+
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+
+version of Xilinx tools will continue to function, but you no longer qualify for
+
+Xilinx software updates or new releases.
+
+
+
+Creating bit map...
+
+Saving bit stream in "system.bit".
+
+Bitstream generation is complete.
+
+Done!
+
+********************************************************************************
+At Local date and time: Mon Oct 29 19:39:14 2012
+ xsdk.exe -hwspec C:\repos\ora_fpga\botzilla_hardware\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+
+Xilinx EDK 13.4 Build EDK_O.87xd
+
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Done!
+
+********************************************************************************
+At Local date and time: Mon Oct 29 20:11:50 2012
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+
+Done!
+
+********************************************************************************
+At Local date and time: Mon Oct 29 20:11:51 2012
+ xsdk.exe -hwspec C:\repos\ora_fpga\botzilla_hardware\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+
+Xilinx EDK 13.4 Build EDK_O.87xd
+
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\repos\ora_fpga\botzilla_hardware\etc\system.filters
+Done writing Tab View settings to:
+	C:\repos\ora_fpga\botzilla_hardware\etc\system.gui
