@@ -1,0 +1,23 @@
+sect233r1 or B-233
+32-bit AMBA APB slave interface
+GRAES and GRECC cores a
+
+Specifications
+GRAES (AES 128 version):
+• AES compatible (FIPS-197)
+• AMBA AHB slave interface
+• 1.4 Mbits per MHz throughput
+• Speed and size:
+    68 MHz, 8900 RTAX cells
+    125 MHz, 5100 Virtex-2 LUTs
+    14500 ASIC gates
+GRECC:
+• B-233 compatible (FIPS-186-2)
+• sect233r1 compatible (SEC2)
+• AMBA APB slave interface
+• 13.9 kbits per MHz throughput
+• Speed and size:
+    38 MHz, 19200 RTAX cells
+    93 MHz, 12900 Virtex-2 LUTs
+485
+00 ASIC gates
