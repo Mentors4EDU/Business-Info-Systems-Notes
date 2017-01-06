@@ -1,0 +1,10 @@
+private static void Port_DataReceived(object sender, SerialDataReceivedEventArgs e)
+    {
+        SerialPort spL = (SerialPort) sender;
+        int bufSize = 15;
+        Byte[] dataBuffer = new Byte[bufSize];
+        Console.WriteLine("Data Received at"+DateTime.Now);
+        Console.WriteLine(spL.Read(dataBuffer, 1.5, bufSize));
+        string s = System.Text.ASCIIEncoding.ASCII.GetString(dataBuffer);
+        Console.WriteLine(s);
+    }
