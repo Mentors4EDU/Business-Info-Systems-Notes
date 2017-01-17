@@ -204,7 +204,7 @@
 	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
 	{ "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
 	{ "keys": ["enter"], "command": "commit_completion", "context":
-		[
+	[
 			{ "key": "auto_complete_visible" },
 			{ "key": "setting.auto_complete_commit_on_tab", "operand": false }
 		]
