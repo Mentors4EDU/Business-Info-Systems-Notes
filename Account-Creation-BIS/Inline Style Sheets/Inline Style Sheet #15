@@ -1,0 +1,114 @@
+.Button-button-JUbGM {
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 11px;
+  text-align: center;
+  transition: background-color 0.1s ease-in-out;
+  line-height: 22px;
+  user-select: none;
+  font-family: inherit;
+  font-size: 11px;
+  appearance: none;
+  width: 100%;
+  color: white;
+  background: #3E3E3E;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.Button-button-JUbGM:hover {
+  background-color: #252525;
+}
+.Button-button-JUbGM:disabled {
+  color: #A1A1A1;
+}
+.Button-button-JUbGM:disabled:hover {
+  background-color: inherit;
+}
+.Button-primary-1IQhS:disabled,
+.Button-primary-1IQhS:disabled:hover {
+  background-color: #3E3E3E;
+}
+.Button-recommend-3l7RG {
+  background-color: #14AAFF;
+}
+.Button-recommend-3l7RG:hover {
+  background-color: #008fe0;
+}
+.Button-recommend-3l7RG:disabled,
+.Button-recommend-3l7RG:disabled:hover {
+  color: #e6e6e6;
+  background-color: #14AAFF;
+}
+.Button-minor-2dvLR {
+  background-color: #E4E4E4;
+  color: #3E3E3E;
+}
+.Button-minor-2dvLR:hover {
+  background-color: #D0D0D0;
+}
+.Button-minor-2dvLR:disabled,
+.Button-minor-2dvLR:disabled:hover {
+  background-color: #E4E4E4;
+}
+.Button-caution-3_j1x {
+  background-color: #F2F2F2;
+  color: #3E3E3E;
+}
+.Button-caution-3_j1x:hover {
+  background-color: #F0523D;
+  color: #FFF;
+}
+.Button-caution-3_j1x:disabled,
+.Button-caution-3_j1x:disabled:hover {
+  background-color: #F2F2F2;
+  color: inherit;
+}
+.Button-inset-2w5DM {
+  background-color: #FFF;
+  color: #3E3E3E;
+}
+.Button-inset-2w5DM:hover {
+  background-color: #FFF;
+}
+.Button-inset-2w5DM:disabled,
+.Button-inset-2w5DM:disabled:hover {
+  background-color: #FFF;
+}
+.Button-text-1fwa_ {
+  background: transparent;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  white-space: nowrap;
+  line-height: 33px;
+  padding: 0 11px;
+  transition: all 0.1s ease-in-out;
+  color: #3E3E3E !important;
+  border-bottom: none;
+  outline: none;
+  text-align: left;
+}
+.Button-text-1fwa_:hover,
+.Button-text-1fwa_:hover a {
+  color: black !important;
+  background: transparent;
+}
+.Button-text-1fwa_ a {
+  border: none;
+  display: inline-block;
+  outline: none;
+}
+.Button-buttonContainer-2APnt {
+  display: flex;
+  border-top: 1px solid #E4E4E4;
+  margin-top: 33px;
+  background: transparent;
+}
+.Button-buttonContainer-2APnt button {
+  border-right: 1px solid #E4E4E4;
+}
+.Button-buttonContainer-2APnt button:last-child {
+  border-right: none;
+}
