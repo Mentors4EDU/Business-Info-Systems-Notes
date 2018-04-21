@@ -1,0 +1,11 @@
+.ErrorMessage-error-1PaG_ {
+  color: #F0523D;
+  font-size: 11px;
+  padding: 4px 0;
+}
+.ErrorMessage-error-1PaG_ a,
+.ErrorMessage-error-1PaG_ a:hover {
+  color: #F0523D;
+  border-bottom: 1px solid #797979;
+  border-bottom-color: #F0523D;
+}
