@@ -1,0 +1,20 @@
+.typography-ellipsis-EP8YV {
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.typography-headline-_QfyY {
+ text-transform:uppercase;
+ font-weight:500
+}
+.typography-headlineLarge-3BPzL {
+ line-height:44px;
+ font-size:16px
+}
+.typography-description-3DTEP {
+ color:#797979;
+ font-size:11px
+}
+.typography-description-3DTEP a:hover {
+ color:#3e3e3e
+}
