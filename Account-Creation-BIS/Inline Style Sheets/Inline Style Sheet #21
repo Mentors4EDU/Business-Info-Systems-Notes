@@ -1,0 +1,6 @@
+.u-field-label + .CheckboxGroup-container-aRsV9 {
+  margin-top: 11px;
+}
+.CheckboxGroup-option-LbOrO:not(:first-child) {
+  margin-top: 20px;
+}
