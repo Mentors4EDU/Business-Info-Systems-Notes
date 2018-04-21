@@ -1,0 +1,15 @@
+.Header-header-2XOnU {
+ padding:22px 33px 0;
+ -webkit-flex-shrink:0;
+ -ms-flex-negative:0;
+ flex-shrink:0
+}
+.Header-hasRule-2Pzi7 {
+ padding-bottom:17px;
+ border-bottom:1px solid #e4e4e4
+}
+@media screen and (max-width:375px) {
+ .Header-midnight-3Zir8 {
+  padding:22px 22px 0
+ }
+}
