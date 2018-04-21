@@ -1,0 +1,12 @@
+.ManagedControls-container-1jef9 {
+ position:absolute;
+ right:0;
+ top:0;
+ height:88px;
+ display:-webkit-flex;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-align-items:center;
+ -ms-flex-align:center;
+ align-items:center
+}
