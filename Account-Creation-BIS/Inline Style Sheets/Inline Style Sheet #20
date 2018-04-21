@@ -1,0 +1,207 @@
+@keyframes shiver {
+  from {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(11px);
+  }
+  75% {
+    transform: translateX(-11px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes shimmy {
+  from {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-33px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulseBadgeOpacity {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes riseandfadein {
+  0% {
+    transform: translateY(22px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/**
+ * Jiggles the container back and forth slowly. Used to draw attention of a user
+ * back to the item. For instance, if a user attempts to click out of a modal
+ * that is not completed.
+ */
+.Check-shake-3CotR {
+  animation-name: shiver;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/**
+ * Shake the item back and forth very quickly. Used to indicate that an action
+ * is improper or impossible, such as saving a form with errors or deleting an
+ * item without sufficient permissions.
+ */
+.Check-shiver-3OrBM {
+  animation-name: shiver;
+  animation-duration: 0.1s;
+  animation-iteration-count: 2;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/**
+ * Gently rocks the animated item to the left. Used to gently remind the user
+ * that an action cannot happen, such as when reaching the end of a list, or
+ * trying slide something farther than it can go.
+ */
+.Check-shimmy-3cyMC {
+  animation-name: shimmy;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/**
+ * Spin your heart out!
+ */
+.Check-spin-23QN5 {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.Check-pulseBadgeOpacity-3HJ3k {
+  animation-name: pulseBadgeOpacity;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.Check-fadeout-3yunH {
+  animation-name: fadeout;
+  animation-iteration-count: 1;
+}
+.Check-fadein-2p41n {
+  animation-name: fadein;
+  animation-iteration-count: 1;
+}
+.Check-riseandfadein-2-ZlD {
+  animation-name: riseandfadein;
+  animation-iteration-count: 1;
+}
+.Check-check-C8QtD {
+  cursor: pointer;
+  padding-left: 33px;
+  position: relative;
+  min-height: 22px;
+}
+.Check-check-C8QtD:before {
+  border: 2px solid rgba(121, 121, 121, 0.2);
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: ' ';
+  display: block;
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: border-color 0.1s ease-in-out;
+  width: 22px;
+  z-index: 1;
+}
+.Check-check-C8QtD:hover:before {
+  border-color: rgba(121, 121, 121, 0.5);
+}
+.Check-check-C8QtD.Check-active-1BZbN:before {
+  border-color: #3E3E3E;
+}
+.Check-check-C8QtD:after {
+  background-size: 9px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: ' ';
+  display: block;
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  width: 22px;
+  z-index: 2;
+}
+.Check-check-C8QtD.Check-active-1BZbN:after {
+  opacity: 1;
+  animation-name: bounceIn;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-iteration-count: once;
+  transition: background-color 0.2s ease-in-out;
+}
+.Check-check-C8QtD.Check-active-1BZbN:hover:after {
+  background-color: black;
+}
+.Check-check-C8QtD.Check-isDisabled-3jkCn,
+.Check-check-C8QtD.Check-isDisabled-3jkCn:hover {
+  cursor: default;
+  opacity: 0.6;
+}
+.Check-check-C8QtD.Check-isDisabled-3jkCn:hover:before {
+  border-color: rgba(121, 121, 121, 0.2);
+}
+.Check-check-C8QtD.Check-isDisabled-3jkCn:hover:after {
+  background-color: #3E3E3E;
+}
+.Check-title-i2Nj0 {
+  font-weight: 500;
+}
+.Check-description-3afE4 {
+  font-size: 11px;
+  color: #797979;
+}
