@@ -1,0 +1,17 @@
+.Button-button-3Ob81:first-of-type {
+ border-bottom-left-radius:4px
+}
+.Button-button-3Ob81:last-of-type {
+ border-right:0;
+ border-bottom-right-radius:4px
+}
+.Button-minor-3Vr-E {
+ background:transparent
+}
+.Button-minor-3Vr-E:hover {
+ background-color:#fff
+}
+.Button-caution-2ZsmR:disabled,.Button-caution-2ZsmR:disabled:hover {
+ color:#a1a1a1;
+ background-color:#e4e4e4
+}
