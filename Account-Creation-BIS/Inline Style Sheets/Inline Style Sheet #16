@@ -1,0 +1,17 @@
+ {
+  /**
+   * Themes
+   */
+}
+.Label-label-2SGeh {
+  padding-bottom: 5.5px;
+  font-weight: 500;
+}
+.Label-midnight-s29Yr {
+  padding-bottom: 0;
+  line-height: 11px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #888888;
+}
