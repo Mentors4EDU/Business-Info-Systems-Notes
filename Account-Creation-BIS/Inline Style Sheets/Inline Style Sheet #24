@@ -1,0 +1,34 @@
+.FlatSelect-container-3hgAp {
+  display: flex;
+  font: 500 11px/22px 'Gotham SSm A', 'Gotham SSm B', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.FlatSelect-option-16WBT {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1 1 auto;
+  border-left: 1px solid #E4E4E4;
+  cursor: pointer;
+}
+.FlatSelect-option-16WBT:not(.FlatSelect-active-1-NQJ):hover {
+  background-color: #E4E4E4;
+  z-index: 10;
+  border-color: #F2F2F2;
+}
+.FlatSelect-option-16WBT:not(.FlatSelect-active-1-NQJ):hover + .FlatSelect-option-16WBT {
+  border-color: #f2f2f2;
+}
+.FlatSelect-option-16WBT:first-child {
+  border-left: 0;
+}
+.FlatSelect-option-16WBT.FlatSelect-optionActive-29VWK {
+  background-color: #E4E4E4;
+  border-right: 0;
+}
+.FlatSelect-optionInput-3KiS6 {
+  display: none;
+}
