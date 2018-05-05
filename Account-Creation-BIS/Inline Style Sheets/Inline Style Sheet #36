@@ -1,0 +1,55 @@
+.RadioGroup-option-1P3JX {
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+.RadioGroup-option-1P3JX.RadioGroup-isDisabled-2wcCQ {
+  cursor: default;
+  opacity: 0.6;
+}
+.RadioGroup-option-1P3JX:not(:first-child) {
+  margin-top: 11px;
+}
+.RadioGroup-option-1P3JX input[type=radio] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.RadioGroup-option-1P3JX input[type=radio] + div {
+  padding-left: 33px;
+  display: block;
+}
+.RadioGroup-option-1P3JX input[type=radio] + div:before {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: ' ';
+  display: inline-block;
+  border: 2px solid rgba(121, 121, 121, 0.2);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: border-color 0.1s ease-in-out;
+}
+.RadioGroup-option-1P3JX input[type=radio] + div:hover:before {
+  border-color: rgba(121, 121, 121, 0.5);
+}
+.RadioGroup-option-1P3JX input[type=radio]:checked + div:before {
+  border: 8px solid #3E3E3E;
+  animation-name: bounceIn;
+  animation-duration: 0.4s;
+  animation-iteration-count: once;
+  animation-fill-mode: both;
+}
+.RadioGroup-option-1P3JX input[type=radio]:checked + div:hover:before {
+  border-color: black;
+}
+.RadioGroup-label-2bVCm {
+  font-weight: 500;
+}
+.RadioGroup-description-3gMUN {
+  font-weight: 400;
+  color: #797979;
+}
