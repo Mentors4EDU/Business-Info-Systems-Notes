@@ -1,0 +1,48 @@
+.Search-container-1trge {
+  position: relative;
+}
+.Search-search-3d25f {
+  background-color: #fff;
+  background-position: 11px center;
+  border: none;
+  box-sizing: border-box;
+  color: #3e3e3e;
+  cursor: auto;
+  height: 44px;
+  padding: 11px 44px;
+  position: relative;
+  width: 100%;
+}
+.Search-search-3d25f::-ms-clear {
+  display: none;
+}
+.Search-search-3d25f.Search-hiddenSearchIcon-3qeit {
+  padding-left: 11px;
+}
+.Search-searchIcon-4jFNS {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 11px;
+  left: 11px;
+  cursor: default;
+}
+.Search-resetButton-32cJm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  width: 44px;
+  text-indent: -9000px;
+  transition: opacity 0.3s ease-in-out;
+}
+.Search-resetButton-32cJm:hover {
+  opacity: 1;
+}
+.Search-resetButton-32cJm.Search-buttonHidden-1MAio {
+  cursor: default;
+  opacity: 0;
+}
+.Search-hasErrors-3W0K3 {
+  box-shadow: inset 0 0 0 2px #F0523D;
+}
